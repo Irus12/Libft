@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nschilli <nschilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nschilli <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/03 17:23:08 by nschilli          #+#    #+#             */
-/*   Updated: 2025/10/03 17:23:08 by nschilli         ###   ########.fr       */
+/*   Created: 2025/10/06 15:46:00 by nschilli          #+#    #+#             */
+/*   Updated: 2025/10/06 15:46:02 by nschilli         ###   ####lausanne.ch   */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 void ft_bzero(void *s, size_t n)
 {
