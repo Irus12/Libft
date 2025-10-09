@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memcpy(void *dest, const void *src, size_t n)
+void	*memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
 	unsigned char	*d;
 	unsigned char	*s;
 
-	d = unsigned char dest;
-	s = unsigned char src;
+	d = (unsigned char *) dest;
+	s = (unsigned char *) src;
 	while (n--)
 	{
 		d[n] = s[n];
