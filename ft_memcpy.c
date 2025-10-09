@@ -12,11 +12,11 @@
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*d;
-	unsigned char	*s;
+	 char	*d;
+	 char	*s;
 
-	d = (unsigned char *) dest;
-	s = (unsigned char *) src;
+	d = (char *) dest;
+	s = (char *) src;
 	while (n--)
 	{
 		d[n] = s[n];
