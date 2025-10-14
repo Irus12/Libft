@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nschilli <nschilli@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nschilli <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/03 17:16:57 by nschilli          #+#    #+#             */
-/*   Updated: 2025/10/03 18:03:01 by nschilli         ###   ########.fr       */
+/*   Updated: 2025/10/10 09:15:26 by nschilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memset(void *b, int c, size_t n)
+void *memset(void *src, int c, size_t n)
 {
-	unsigned char	*t;
+	char	*t;
 
-	t = (unsigned char b);
+	t = (char src);
 	while (i < n || t[i])
 	{
 		t[i] = c;
 		i++;
 	}
+	return (src);
 }

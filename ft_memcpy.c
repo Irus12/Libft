@@ -12,14 +12,14 @@
 
 void	*memcpy(void *dest, const void *src, size_t n)
 {
-	 char	*d;
-	 char	*s;
+	char	*cdest;
+	char	*csrc;
 
-	d = (char *) dest;
-	s = (char *) src;
+	cdest = (char *) dest;
+	csrc = (char *) src;
 	while (n--)
 	{
-		d[n] = s[n];
+		cdest[n] = csrc[n];
 	}
 	return (dest);
 }

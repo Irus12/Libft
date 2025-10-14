@@ -1,8 +1,10 @@
 
-char *strchr(const char *s, int c)
+char *strchr(const char *src, int c)
 {
+	char	*s;
 	size_t	i;
 	
+	s = (char *) src;
 	i = 0;
 	while (s[i])
 	{

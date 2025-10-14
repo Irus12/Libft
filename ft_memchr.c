@@ -1,18 +1,18 @@
 #include <stddef.hstddef.h>
 void *memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*mem;
-	unsigned char	comp;
+	char	*mem;
+	char	comp;
 	size_t	i;
 
-	mem = (unsigned char *) s;
-	comp = (unsigned char) c;
+	mem = (char *) s;
+	comp = (char *) c;
 	i = 0;
 	while (i < n)
 	{
 		if (mem[i] == comp[i])
 		{
-			return ((void *) mem[i]);
+			return ((void *) mem[i]); //ou bien return s;
 		}
 		i++;
 	}

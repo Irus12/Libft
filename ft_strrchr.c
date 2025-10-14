@@ -9,11 +9,11 @@ char *ft_strrchr(const char *s, int c)
 	last = 0;
 	while (s[i])
 	{
-		if (s[i] == (char) c)
-			last = (char *)&s[i];
+		if (s[i] == (char) c) //fera de la merde
+			last = (char *)&s[i]; //chelou, s+i fonctionne ?
 		i++;
 	}
-	if (s[i] == c)
+	if (s[i] == c) //si le dernier char est celui qui corresond
 		last = (char *)&s[i];
 	return (last);
 }

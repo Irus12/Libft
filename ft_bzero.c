@@ -13,9 +13,9 @@
 //test
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*t;
+	char	*t;
 
-	t = (unsigned char s);
+	t = (char *) s;
 	while (i < n || t[i])
 	{
 		t[i] = 0;
