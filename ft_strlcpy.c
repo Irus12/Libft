@@ -1,16 +1,20 @@
-size_t ft_strlcpy(char *dst, const char *src, size_t dsize)
+//size inclue le \0
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
+	size_t	len;
 
 	i = 0;	
-	while(i <= dsize || src[i])
+	while (src[len])
+		len++;
+	if (size < 1)
 	{
-		dst[i] = src[i];
-		i++;
+		while(i < size - 1 && src[i])
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
 	}
-	while (dest[i])
-	{
-		dest[i] = '\0';
-	}
-	return (i);
+	return (len);
 }
