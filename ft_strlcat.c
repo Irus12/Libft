@@ -13,7 +13,7 @@ static size_t strnlen(char *c, size_t max)
 }
 
 //size taille du buffer, pas du string dans le buffer
-size_t strlcat(char *dst, const char *str, size_t size) //size includes \0
+size_t ft_strlcat(char *dst, const char *str, size_t size) //size includes \0
 {
 	size_t	dlen;
 	size_t	i;
