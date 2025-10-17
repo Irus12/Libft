@@ -1,17 +1,15 @@
 #include <stddef.h>
 #include <stdlib.h>
-
+#include "libft.h"
 void *ft_calloc(size_t nmemb, size_t size)
 {
-    void    *out;
-    
-    out = malloc(nmemb * size);
-    if(nmemb == 0 || size == 0)
-        return NULL;
-    while (out[size])
-    {
-        out[size] = 0;
-        size--;
-    }
-    return (out);
+	void	*out;
+	size_t	length;
+
+	length = nmemb * size;
+	out = (void *)malloc(length);
+	if(!out)
+		return NULL;
+	ft_bzero(out, length);
+	return (out);
 }

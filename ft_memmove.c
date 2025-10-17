@@ -9,6 +9,7 @@
 /*   Updated: 2025/10/09 17:50:36 by nschilli         ###   ####lausanne.ch   */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 //overlap si on donne genre 'tab' et 'tab + 2'
 //
@@ -21,6 +22,8 @@ void	*memmove(void *dest, const void *src, size_t n)
 	cdest = (char *) dest;
 	csrc = (char *) src;
 	i = 0;
+	if(!cdest || !csrc)
+		return(0);
 	if (dest <= src)
 	{
 		while (n--)
@@ -29,16 +32,14 @@ void	*memmove(void *dest, const void *src, size_t n)
 			i++;
 		}
 	}
-	if else (dest > src)
+	else if (dest > src)
 	{
 		i = n - 1;
 		while (n--)
 		{
-			cdst[i]; = crsc[i];
+			cdest[i] = csrc[i];
 			i--;
 		}
 	}
-	if(!dest && !src)
-		return(0);
-	return (dest)
+	return (dest);
 }

@@ -1,3 +1,4 @@
+#include "libft.h"
 char *strnstr(const char *haystack, const char *needle, size_t len)
 {
     char	*hay;
@@ -25,4 +26,5 @@ char *strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		i++;
 	}
+	return (0);
 }

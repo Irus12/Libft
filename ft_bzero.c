@@ -9,13 +9,15 @@
 /*   Updated: 2025/10/06 15:46:02 by nschilli         ###   ####lausanne.ch   */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 //test
 void	ft_bzero(void *s, size_t n)
 {
 	char	*t;
+	size_t	i;
 
 	t = (char *) s;
+	i = 0;
 	while (i < n || t[i])
 	{
 		t[i] = 0;

@@ -1,4 +1,7 @@
-int atoi(const char *nptr) 
+#include "libft.h"
+#include <stdio.h>
+
+int ft_atoi(const char *nptr) 
 {
     char    *str;
     size_t  i;
@@ -24,4 +27,10 @@ int atoi(const char *nptr)
         out = out*10 + str[i] - 48;
     } 
     return (sgn * out);
+}
+
+int main()
+{
+    int i = ft_atoi("12res");
+    printf("%d",i);
 }

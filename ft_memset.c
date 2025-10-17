@@ -9,12 +9,14 @@
 /*   Updated: 2025/10/10 09:15:26 by nschilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 void *memset(void *src, int c, size_t n)
 {
 	char	*t;
+	size_t	i;
 
-	t = (char src);
+	t = (char *)src;
+	i = 0;
 	while (i < n || t[i])
 	{
 		t[i] = c;

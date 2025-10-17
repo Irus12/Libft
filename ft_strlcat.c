@@ -1,6 +1,7 @@
-static size_t strnlen(char *c, size_t max)
+#include "libft.h"
+static size_t ft_strnlen(char *c, int max)
 {
-	size_t	i,
+	int	i;
 
 	i = 0;
 	while (c[i])
@@ -18,15 +19,15 @@ size_t ft_strlcat(char *dst, const char *str, size_t size) //size includes \0
 	size_t	dlen;
 	size_t	i;
 
-	dlen = strnlen(dst, size);
+	dlen = ft_strnlen(dst, (int)size);
 	i = 0;
 	if(dlen < size) //check on donne une bonne size, fait passer si size = dlen + 1
 	{
 		while (str[i] && i < (size - dlen) - 1) //check si y'a de la place, fait pas passer si size = dlen + 1
 		{
-			dst[dlen + i] = (char *) src[i];
+			dst[dlen + i] = (char)str[i];
 			i++;
 		}
 	}
-	return (dlen + strnlen((char *) str, -1));
+	return (dlen + ft_strnlen((char *) str, -1));
 }

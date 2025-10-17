@@ -1,4 +1,4 @@
-
+#include "libft.h"
 char *strchr(const char *src, int c)
 {
 	char	*s;
@@ -10,7 +10,7 @@ char *strchr(const char *src, int c)
 	{
 		if (s[i] == c)
 		{
-			return s[i];
+			return &s[i];
 			i++;
 		}
 	}

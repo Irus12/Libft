@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
-
+#include "libft.h"
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*out;
@@ -14,7 +14,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return NULL;
 	while (s[i] || i < start + len)
 	{
-		out[j] = (char *) s[i];
+		out[j] = (char) s[i];
 	}
 	return out;
 }

@@ -1,3 +1,4 @@
+#include "libft.h"
 int nbrdigits(int c)
 {
     int digits;
@@ -17,11 +18,9 @@ char	*ft_itoa(int c)
 {
     char	*out;
     size_t digits;
-    size_t dgt;
 
     digits = nbrdigits(c);
     out = malloc(digits * sizeof(char));
-    dgt = c;
     while (digits > 0)
     {
         out[digits] = c % 10;

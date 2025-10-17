@@ -9,7 +9,7 @@
 /*   Updated: 2025/10/03 18:00:57 by nschilli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include "libft.h"
 void	*memcpy(void *dest, const void *src, size_t n)
 {
 	char	*cdest;
